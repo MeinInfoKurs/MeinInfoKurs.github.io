@@ -1,0 +1,213 @@
+ /* Generelle styles */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+  }
+  
+  body{
+    background-color: #f5f1f1;
+    height: 100% !important;
+  }
+  
+  /* Navigationsleiste */
+  nav {
+    width: 250px;
+    height: 97%;
+    background-color: white;
+    color: black;
+    margin: 2% 0% 2% 2%;
+    padding: 20px;
+    position: fixed;
+    border-radius: 15px;
+  }
+  nav h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }  
+  nav ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  nav ul li {
+    margin-bottom: 20px;
+    margin-left: 35px;
+    text-align: start !important;
+  }
+  nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+
+  /* Main */
+  main {
+    margin-left: 250px;
+    padding: 30px 45px 30px 75px;
+  }
+  .titleMain{
+    text-align: center;
+    font-family: "Montserrat", serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+  } 
+  #upper-flex{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 25px;
+    width: 100% !important;
+  }
+  #upper-flex div{
+    width: 50%;
+  }
+  #lower-flex{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 25px;
+    width: 100% !important;
+  }
+  #lower-flex div{
+    width: 50%;
+  }
+ 
+  #flexMain {
+    display: flex;
+    flex-direction: column; /* Ensures vertical stacking */
+    justify-content: flex-start;
+    align-items: stretch; /* Ensures full width */
+    padding: 0px 25px;
+  }  
+ 
+  
+/* CODE SNIPPET */
+.code-container {
+    background-color: white !important;
+    border-radius: 8px;
+    border: 1px solid black !important;
+    overflow-x: auto;
+    position: relative;
+    margin: 0px 0px 35px 0px;
+}
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f1f1;
+    padding: 8px 12px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom: 1px solid black !important;
+    width: 100% !important;
+}
+.toolbar span {
+    color: black;
+}
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+.button {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.4s ease;
+}
+.button:hover {
+    background-color: rgb(97, 95, 95);
+    color: white;
+    transition: all 0.4s ease;
+}
+
+.comment { color: #6a9955 !important; }
+.keyword { color: #569cd6; }
+.class-name { color: #d7ba7d; }
+.method { color: #dcdcaa; }
+.type { color: #4ec9b0; }
+.string { color: #ce9178; }
+code { text-align: left; align-items: start;} /* Ändert nichts -_- */
+  
+
+
+
+
+
+
+
+#titlePage{
+    text-align: center;
+    margin: 1vh 0vh 5vh 0vh;
+}
+.Aufgabenstellung{
+    margin: 20px 0px 20px 30px;
+    text-align: left;
+}
+#Lösungsprozess{
+    margin: 50px 0px 20px 0px;
+}
+.SchritteListe{
+    padding: 5px 0px 5px 45px;
+}
+.Schritte{
+    margin: 35px 0px 15px 0px;
+}
+
+#Kurse{
+    margin: 50px 0px 20px 0px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
+}
+#Kurse div{
+    padding: 35px;
+    border: 1px solid black;
+    border-radius: 12px;
+    background-color: white !important;
+    transition: all 1s ease;
+}
+#Kurse div:hover{
+    color: #569cd6 !important;
+    background-color: #d6c297 !important;
+    transition: all 1s ease;
+}
+#Einfuehrung{
+    margin: 10px 15px 35px 25px;
+}
+#AufgabenMain{
+    margin: 10px 15px 35px 25px;
+}
+#AufgabenLinks li{
+    margin-bottom: 7px;
+    font-size: large;
+}
+.TastenKombination{
+    background-color: lightgray !important;
+    color: black;
+    margin: 3px;
+}
+
+#Fragen li{
+    margin: 40px 0px 5px 0px;
+}
+#Fragen div{
+    display: flex !important;
+}
+
+
+.antwort {
+    filter: blur(5px);
+    cursor: pointer;
+    display: inline-block;
+    transition: filter 0.3s ease;
+}
+.antwort.anzeigen {
+    filter: blur(0);
+}
