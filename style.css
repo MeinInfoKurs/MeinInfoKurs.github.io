@@ -1,52 +1,94 @@
- /* Generelle styles */
- * {
+/* Generelle styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat", serif;
-      font-optical-sizing: auto;
-      font-style: normal;
-  }
-  
-  body{
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body {
     background-color: #f5f1f1;
     height: 100% !important;
-  }
-  
-  /* Navigationsleiste */
-  nav {
+    display: flex;
+}
+
+/* Navigationsleiste */
+nav {
     width: 250px;
-    height: 97%;
+    height: 100vh;
     background-color: white;
     color: black;
-    margin: 2% 0% 2% 2%;
     padding: 20px;
     position: fixed;
-    border-radius: 15px;
-  }
-  nav h2 {
+    left: 0;
+    top: 0;
+    border-radius: 0 15px 15px 0;
+    transition: transform 0.3s ease-in-out;
+}
+nav h2 {
     text-align: center;
     margin-bottom: 20px;
-  }  
-  nav ul {
+}
+nav ul {
     list-style: none;
     padding-left: 0;
-  }
-  nav ul li {
+}
+nav ul li {
     margin-bottom: 20px;
     margin-left: 35px;
     text-align: start !important;
-  }
-  nav ul li a {
+}
+nav ul li a {
     color: black;
     text-decoration: none;
     font-size: 18px;
-  }
+}
+
+
+
+  /* Hamburger Menü */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1100;
+}
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        transform: translateX(-100%);
+    }
+    nav.active {
+        transform: translateX(0);
+    }
+    .hamburger {
+        display: flex;
+    }
+    main{
+        margin-left: 0px !important;
+        padding: 10px 25px !important;
+        width: 100% !important;
+    }
+
+}
   
+
+
 
   /* Main */
   main {
-    margin-left: 250px;
+    margin-left: 210px;
     padding: 30px 45px 30px 75px;
   }
   .titleMain{
