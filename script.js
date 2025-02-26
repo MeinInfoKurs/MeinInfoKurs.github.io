@@ -13,3 +13,8 @@
 document.addEventListener('contextmenu', function(event) {
     event.preventDefault();
     });
+
+function revealContent() {
+            document.getElementById("blurDivID").classList.add("anzeigen");
+            document.querySelector(".show-button").style.display = "none";
+        }
