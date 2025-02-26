@@ -25,6 +25,7 @@ nav {
     left: 0;
     top: 0;
     border-radius: 0 15px 15px 0;
+    z-index: 100;
     transition: transform 0.3s ease-in-out;
 }
 nav h2 {
