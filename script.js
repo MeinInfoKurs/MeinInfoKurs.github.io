@@ -18,3 +18,8 @@ function revealContent() {
             document.getElementById("blurDivID").classList.add("anzeigen");
             document.querySelector(".show-button").style.display = "none";
         }
+
+        
+function revealAnswer(event) {
+    event.target.classList.add('anzeigen');
+}
