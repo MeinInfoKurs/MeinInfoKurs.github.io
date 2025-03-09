@@ -561,7 +561,7 @@ nav ul li a {
     border-collapse: collapse;
     font-size: 16px;
     font-family: Arial, sans-serif;
-    color: white;
+    color: var(--text-color);
     text-align: center;
     justify-content: center;
     margin-bottom: 65px;
@@ -571,8 +571,8 @@ nav ul li a {
     padding: 10px;
     text-transform: uppercase;
     font-weight: bold;
-    border-bottom: 1px solid white;
-    border-left: 1px solid white; 
+    border-bottom: 1px solid var(--text-color);
+    border-left: 1px solid var(--text-color); 
     text-align: center;
 }
 
@@ -583,7 +583,7 @@ nav ul li a {
 #Datentypen tbody tr td {
     padding: 10px 0px 10px 40px;
     text-align: left; 
-    border-left: 1px solid #ddd; 
+    border-left: 1px solid var(--text-color); 
 }
 
 #Datentypen tbody tr td:first-child {
