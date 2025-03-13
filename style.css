@@ -126,6 +126,22 @@ nav ul li a {
         width: 100% !important;
     }
 
+    /* Button-Styling */
+    #toggle-history {
+        position: fixed;  /* Fixiert den Button auf dem Bildschirm */
+        top: 6px;        /* Abstand vom oberen Rand */
+        right: 6px;      /* Abstand vom rechten Rand */
+        padding: 15px;
+        font-size: 13px;
+        cursor: pointer;
+        color: var(--text-color);
+        border: none;
+        border-radius: 10px;
+        transition: 0.3s;
+        z-index: 1000;    /* Stellt sicher, dass er über anderen Elementen bleibt */
+        background-color: var(--body-color);
+    }
+
 }
   
 
